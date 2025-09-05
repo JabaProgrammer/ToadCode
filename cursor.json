@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "toadcode": {
+      "command": "node",
+      "args": ["dist/server.js"],
+      "env": { "GITHUB_TOKEN": "${env:GITHUB_TOKEN}" }
+    }
+  }
+}
