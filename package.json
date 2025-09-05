@@ -1,0 +1,29 @@
+{
+  "name": "toadcode-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "toadcode-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.2.0",
+    "ajv": "^8.17.1",
+    "eslint": "^9.9.0",
+    "prettier": "^3.3.3",
+    "semver": "^7.6.3",
+    "isolated-vm": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/parser": "^8.42.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
